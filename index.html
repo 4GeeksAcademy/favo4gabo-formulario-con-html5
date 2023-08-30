@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body class="border border-secondary">
-    <div class="container-lg mt- border border-primary">
+<body class="vh-100 border border-secondary">
+    <div class="container-lg mt-5 border border-secondary">
       <!-- nav -->
-      <nav class="navbar bg-light border border-danger">
-          <div class="container-fluid border border-success">
+      <nav class="navbar bg-light border border-secondary">
+          <div class="container-fluid">
               <span class="navbar-brand h1">
                 Payment for example
               </span>
@@ -20,24 +20,23 @@
       <!-- end nav -->
 
       <!-- alert notification -->
-      <div class="bg-danger bg-opacity-25 p-2">
+      <div class="bg-danger bg-opacity-25 p-2 mt-3 mb-3">
         <p class="p-rojo">Some fields are missing</p>
       </div>
       <!-- end alert notification -->
 
+      <!-- form -->
       <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">Card #</label>
           <input type="text" class="form-control" id="validationCustom01" placeholder="XXXXXXXX" required>
           <div class="valid-feedback">
-            Looks good!
           </div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">CVC #</label>
           <input type="text" class="form-control" id="validationCustom02" placeholder="0000" required>
           <div class="valid-feedback">
-            Looks good!
           </div>
         </div>
         <div class="col-md-4">
@@ -46,44 +45,50 @@
             <span class="input-group-text" id="inputGroupPrepend">$</span>
             <input type="text" class="form-control" id="validationCustomUsername" placeholder="Amount" required>
             <div class="invalid-feedback">
-              Please choose a username.
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <label for="inputEmail4" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="inputEmail4">
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Password</label>
-          <input type="password" class="form-control" id="inputPassword4">
+          <label for="inputPassword4" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="inputPassword4">
         </div>
         <div class="col-md-6">
           <label for="inputCity" class="form-label">City</label>
           <input type="text" class="form-control" id="inputCity">
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <label for="inputState" class="form-label">State</label>
           <select id="inputState" class="form-select">
             <option selected>Choose...</option>
             <option>...</option>
           </select>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           <label for="inputZip" class="form-label">Zip</label>
           <input type="text" class="form-control" id="inputZip">
         </div>
-        <div class="mb-3 row">
-          <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Your message</label>
-      <div class="col-sm-10">
-          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Please enter your message here"></textarea>
-      </div>
-      </div>
-        <div class="col-12 d-flex justify-content-end">
-          <button type="submit" class="btn btn-primary">Sign in</button>
+        
+          <div class="col-md-6">
+            <p>We accept:</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP1WhhQJ2DDxdmotyErmRNhMcVpvjSt2AssQ&usqp=CAU" 
+            alt="Metodos de pago">
+          </div>
+          <div class="col-md-6">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <p class="text-muted">Add any notes here.</p>
+          </div>
+        
+        <div class="col-12 d-flex justify-content-end bg-light border border-secondary">          
+          <button type="submit" class="btn btn-secondary">Cancel</button>
+          <button type="submit" class="btn btn-primary">Send</button>
         </div>
       </form>
-        
+      <!-- end form -->
 
     </div>
     
