@@ -11,17 +11,17 @@
     <div class="container-lg mt-5 border border-secondary">
       <!-- nav -->
       <nav class="navbar bg-light border border-secondary">
-          <div class="container-fluid">
-              <span class="navbar-brand h1">
-                Payment for example
-              </span>
-          </div>
+        <div class="container-fluid">
+            <span class="fs-2">
+              Payment form example
+            </span>
+        </div>
       </nav>
       <!-- end nav -->
 
       <!-- alert notification -->
       <div class="bg-danger bg-opacity-25 p-2 mt-3 mb-3">
-        <p class="p-rojo">Some fields are missing</p>
+        <p class="my-p fw-semibold">Some fields are missing</p>
       </div>
       <!-- end alert notification -->
 
@@ -62,13 +62,14 @@
         </div>
         <div class="col-md-3">
           <label for="inputState" class="form-label">State</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
+          <select id="inputState" class="form-select text-muted">
+            <option selected>Pick a state</option>
+            <option>State 2</option>
+            <option>State 3</option>
           </select>
         </div>
         <div class="col-md-3">
-          <label for="inputZip" class="form-label">Zip</label>
+          <label for="inputZip" class="form-label">Postal Code</label>
           <input type="text" class="form-control" id="inputZip">
         </div>
         
@@ -84,8 +85,8 @@
           </div>
         
         <div class="col-12 d-flex justify-content-end bg-light border border-secondary">          
-          <button type="submit" class="btn btn-secondary">Cancel</button>
-          <button type="submit" class="btn btn-primary">Send</button>
+          <button type="submit" class="btn btn-secondary d-inline p-2">Cancel</button>                          
+          <button type="submit" class="btn btn-primary">Send</button>          
         </div>
       </form>
       <!-- end form -->
